@@ -1,8 +1,10 @@
 import { Animal } from "./Animal";
 
 export class Gato extends Animal{
+  tamanioDeOrejas: string = 'grandes';
 
-  maullar(): void {
-    
+  hablar(): void {
+    console.log('miau')
   }
+
 }

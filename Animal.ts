@@ -1,8 +1,10 @@
-export class Animal {
+export abstract class Animal {
 
   protected genero: string;
 
   protected raza: string;
+
+  abstract tamanioDeOrejas: string;
 
   constructor(genero: string, raza: string) {
     this.genero = genero;
@@ -16,4 +18,6 @@ export class Animal {
   dormir(): void {
 
   }
+
+  abstract hablar(): void;
 }

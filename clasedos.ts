@@ -1,7 +1,7 @@
-const { Perro } = require("./Perro");
-const { Persona } = require("./Persona");
+import { Perro } from "./Perro";
+import { Persona } from "./Persona";
 
-let objetoPersona = new Persona('pako', '123123123', 25);
+let objetoPersona = new Persona();
 
 console.log('persona uno: ' + objetoPersona.getNombre());
 

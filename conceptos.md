@@ -2,6 +2,20 @@
 
 Capacidad de heredar atributos y metodos de otra clase. para especificar que una clase va a heredar de otra, se utiliza la palabra clave `extends`
 
+## Clase Base
+clase a partir de la cual se va a heredar
+
+## Clase hija
+clase que hereda de una clase base
+
+## Clase abstracta
+Clase que NO SE PUEDE INSTANCIAR. Solamente se puede heredar
+
+### Atributos y Metodos abstractos
+Se utilizan unicamente en las clases abstractas. Los metodos abstractos son metodos que unicamente se declaran. No se escribe el cuerpo del metodo. Estan hechos para que la clase hija, (es decir la clase que lo vaya a heredar) se encargue de darle el cuerpo a ese metodo (es decir, de implementar el metodo)
+
+Los atributos abstractos son atributos que unicamente se declaran. No se escribe el valor. Estan hechos para que la clase hija, (es decir la clase que lo vaya a heredar) se encargue de darle el valor a ese atributo
+
 # Modificadores de acceso
 
 ## 4 modificadores de acceso

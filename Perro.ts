@@ -1,6 +1,12 @@
 import { Animal } from "./Animal";
 
 export class Perro extends Animal {
+  tamanioDeOrejas: string = 'chicas';
+
+  hablar(): void {
+    console.log('guau guau')
+  }
+
   tipoDePelo: string;
 
   tieneCollar: boolean;

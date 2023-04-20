@@ -13,26 +13,42 @@ export class Persona {
   private edad: number;
 
   // Es un metodo mas de la clase Persona. es el metodo que inicializa al objeto.
-  constructor(nombre: string, dni: string, edad: number) {
+  constructor() {
+    this.nombre = ''
+    this.dni = ''
+    this.edad = 0
     // la palabra reservada this, hace referencia a esta clase. Se utiliza para acceder a los distintos atributos y metodos de esta clase
-    this.nombre = nombre;
-    this.dni = dni;
+  }
+
+  public getEdad(): number {
+    return this.edad;
+  }
+
+  public setEdad(edad: number) {
     this.edad = edad;
   }
 
   // Metodo que se encarga de setear nombre
   // recibimos el nombre por parametro
   // setter
-  setNombre(nombre: string): void {
+  public setNombre(nombre: string): void {
     // y aca lo setemos
     this.nombre = nombre;
   }
 
   // Metodo que se encarga de recuperar el nombre
   // getter
-  getNombre(): string {
+  public getNombre(): string {
     // retornamos el nombre
     return this.nombre;
+  }
+
+  public setDni(dni: string): void {
+    this.dni = dni;
+  }
+
+  getDni(): string {
+    return this.dni;
   }
 
   // metodo de la clase Persona
